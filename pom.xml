@@ -50,14 +50,10 @@
    			</plugin-->
 		</plugins>
 	</build>
-         <pluginGroups></pluginGroups>
-         
-	<proxies></proxies>
-        <mirrors>
-          <mirror>
-            <id>nexus</id>
-            <mirrorOf>*</mirrorOf>
-            <url>http://18.212.50.115:8081/repository/FNB-Master/</url>
-          </mirror>
-        </mirrors>
+        <repositories>
+        	 <repository>
+       		 	<id>FNB_master</id>
+    		        <url>http://18.212.50.115:8081/repository/FNB-Master/</url>
+   		 </repository>
+        </repositories>
 </project>
