@@ -4,6 +4,11 @@ pipeline{
         PATH = "$PATH:/opt/maven/bin"
     }
     stages{
+        stage("code Build"){
+            steps{
+                sh 'mvn clean package'
+            }
+        }
         stage("Sonarqube analysis"){
             steps{
                 script{
